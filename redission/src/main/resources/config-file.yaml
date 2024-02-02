@@ -1,0 +1,4 @@
+singleServerConfig:
+  address: "redis://127.0.0.1:${REDIS_PORT:-6379}"
+#  password: redis
+#  clientName: "learning-redisson"
