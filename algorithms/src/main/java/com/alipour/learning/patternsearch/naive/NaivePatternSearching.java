@@ -1,4 +1,4 @@
-package com.alpour.learning.algorithms.patternsearching;
+package com.alipour.learning.patternsearch.naive;
 
 public class NaivePatternSearching {
 

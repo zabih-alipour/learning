@@ -12,6 +12,7 @@
         <module>javaspecs</module>
         <module>redission</module>
         <module>webflux-redis-cache</module>
+        <module>algorithms</module>
     </modules>
 
     <properties>
