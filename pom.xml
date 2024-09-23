@@ -13,6 +13,11 @@
         <module>redission</module>
         <module>webflux-redis-cache</module>
         <module>algorithms</module>
+        <module>spring-integration</module>
+        <module>local-cache-coffeine</module>
+        <module>jackson</module>
+        <module>reactor</module>
+        <module>lettuce</module>
     </modules>
 
     <properties>
