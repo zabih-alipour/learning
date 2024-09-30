@@ -18,6 +18,7 @@
         <module>jackson</module>
         <module>reactor</module>
         <module>lettuce</module>
+        <module>webflux-keycloak-authentication</module>
     </modules>
 
     <properties>

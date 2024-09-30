@@ -12,6 +12,7 @@ target/
 *.iml
 *.ipr
 .idea
+**/src/main/**/static
 
 ### Eclipse ###
 .apt_generated
@@ -37,3 +38,4 @@ build/
 
 ### Mac OS ###
 .DS_Store
+/webflux-keycloak-authorization/src/main/resources/static/
