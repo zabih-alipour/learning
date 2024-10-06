@@ -19,6 +19,7 @@
         <module>reactor</module>
         <module>lettuce</module>
         <module>webflux-keycloak-authentication</module>
+        <module>webflux-keycloak-authorization</module>
     </modules>
 
     <properties>

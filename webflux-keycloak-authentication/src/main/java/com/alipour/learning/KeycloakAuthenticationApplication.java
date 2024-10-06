@@ -1,7 +1,5 @@
 package com.alipour.learning;
 
-import io.swagger.v3.oas.annotations.security.OAuthFlow;
-import io.swagger.v3.oas.annotations.security.OAuthFlows;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -17,10 +15,10 @@ import io.swagger.v3.oas.annotations.security.SecurityScheme;
 	    , type = SecuritySchemeType.OPENIDCONNECT
 	    , in = SecuritySchemeIn.HEADER
 	    )
-public class SpringbootKeycloakApplication {
+public class KeycloakAuthenticationApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringbootKeycloakApplication.class, args);
+		SpringApplication.run(KeycloakAuthenticationApplication.class, args);
 	}
 
 }
