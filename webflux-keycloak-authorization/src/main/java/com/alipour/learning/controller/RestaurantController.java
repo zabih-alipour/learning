@@ -42,7 +42,7 @@ public class RestaurantController {
     }
 
     @GetMapping("/public/menu/all")
-    //Public API
+    //Public APId
     public Flux<Menu> getMenu() {
         return menuRepository.findAll();
     }

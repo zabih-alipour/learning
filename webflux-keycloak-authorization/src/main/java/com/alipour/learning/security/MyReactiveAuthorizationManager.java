@@ -1,8 +1,7 @@
 package com.alipour.learning.security;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import org.keycloak.representations.AccessTokenResponse;
-import org.keycloak.representations.idm.UserRepresentation;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
@@ -23,7 +22,11 @@ import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.io.IOException;
+import java.util.Base64;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Component
 public class MyReactiveAuthorizationManager implements ReactiveAuthorizationManager<ServerWebExchange> {
@@ -93,7 +96,17 @@ public class MyReactiveAuthorizationManager implements ReactiveAuthorizationMana
     private static MultiValueMap<String, String> buildRequestBody(ServerHttpRequest request) {
         final HttpMethod methodCall = request.getMethod();
         final RequestPath path = request.getPath();
+        Map<String, List<String>> claims = new HashMap<>();
+        claims.put("uri_claim", List.of(request.getPath().value()));
+        claims.put("request_method_claim", List.of(request.getMethod().name()));
 
+        String encodedBytes;
+        try {
+            final ObjectMapper mapper = new ObjectMapper();
+            encodedBytes = Base64.getEncoder().encodeToString(mapper.writeValueAsBytes(claims));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         MultiValueMap<String, String> map = new LinkedMultiValueMap<>();
         map.add("grant_type", "urn:ietf:params:oauth:grant-type:uma-ticket");
         map.add("audience", "spring-keycloak-client");
@@ -101,6 +114,8 @@ public class MyReactiveAuthorizationManager implements ReactiveAuthorizationMana
         map.add("permission_resource_format", "uri");
         map.add("permission_resource_matching_uri", "true");
         map.add("permission", path.value() + "#" + methodCall.name());
+        map.add("claim_token_format", "urn:ietf:params:oauth:token-type:jwt");
+        map.add("claim_token", encodedBytes);
         return map;
     }
 

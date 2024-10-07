@@ -8,4 +8,6 @@ public interface OrderRepository extends ReactiveCrudRepository<Order, Long> {
 
     Flux<Order> findByRestaurantId(Long restaurantId);
 
+    Flux<Order> findByUserId(String userId);
+
 }

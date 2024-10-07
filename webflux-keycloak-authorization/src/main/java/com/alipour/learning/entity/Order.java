@@ -17,6 +17,8 @@ public class Order {
 
     private Long restaurantId;
 
+    private String userId;
+
     private BigDecimal total;
 
     @Transient

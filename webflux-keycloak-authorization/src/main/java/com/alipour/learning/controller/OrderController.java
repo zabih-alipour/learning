@@ -10,7 +10,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @RestController
-@RequestMapping("/order")
+@RequestMapping("/orders")
 @SecurityRequirement(name = "Keycloak")
 public class OrderController {
 
@@ -20,9 +20,14 @@ public class OrderController {
     @Autowired
     OrderItemRepository orderItemRepository;
 
-    @GetMapping("/{restaurantId}/list")
-    public Flux<Order> getOrders(@PathVariable Long restaurantId) {
+    @GetMapping("/by-restaurant/{restaurantId}/list")
+    public Flux<Order> getRestaurantOrders(@PathVariable Long restaurantId) {
         return orderRepository.findByRestaurantId(restaurantId);
+    }
+
+    @GetMapping("/by-user/{userId}/list")
+    public Flux<Order> getUserOrders(@PathVariable(name = "userId") String userId) {
+        return orderRepository.findByUserId(userId);
     }
 
     @GetMapping("/{orderId}")
@@ -36,7 +41,7 @@ public class OrderController {
     }
 
     @PostMapping
-    public Mono<Order> createOrder(Order order) {
+    public Mono<Order> createOrder(@RequestBody Order order) {
         return orderRepository.save(order)
                 .flatMap(entity -> Flux.fromIterable(order.getOrderItems())
                         .map(orderItem -> {

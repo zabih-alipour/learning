@@ -62,6 +62,7 @@ CREATE TABLE orders (
   id SERIAL,
   restaurant_id BIGINT NOT NULL,
   total decimal(10,2) DEFAULT NULL,
+  user_id varchar(100) DEFAULT NULL,
 
   CONSTRAINT orders_PK PRIMARY KEY (id),
   CONSTRAINT order_FK FOREIGN KEY (restaurant_id) REFERENCES restaurant (id)
