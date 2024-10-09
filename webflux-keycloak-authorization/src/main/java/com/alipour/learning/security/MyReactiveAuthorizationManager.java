@@ -11,7 +11,6 @@ import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.security.authorization.AuthorizationDecision;
 import org.springframework.security.authorization.ReactiveAuthorizationManager;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationToken;
 import org.springframework.security.web.server.util.matcher.ServerWebExchangeMatcher;
 import org.springframework.stereotype.Component;
 import org.springframework.util.LinkedMultiValueMap;
@@ -43,29 +42,25 @@ public class MyReactiveAuthorizationManager implements ReactiveAuthorizationMana
     public Mono<AuthorizationDecision> check(Mono<Authentication> authentication, ServerWebExchange exchange) {
         return Flux.fromIterable(ignoredAuthorizationRequests)
                 .flatMap(matcher -> matcher.matches(exchange))
-                .map(ServerWebExchangeMatcher.MatchResult::isMatch)
                 .collectList()
-                .filter(list -> list.stream().anyMatch(p -> p.equals(true)))
-                .map(ignored -> new AuthorizationDecision(true))
-                .switchIfEmpty(authorize(authentication, exchange));
+                .filter(matchResults -> matchResults.stream().noneMatch(ServerWebExchangeMatcher.MatchResult::isMatch))
+                .flatMap(ignored -> authorize(authentication, exchange))
+                .switchIfEmpty(Mono.fromSupplier(() -> new AuthorizationDecision(true)));
     }
 
     private Mono<AuthorizationDecision> authorize(Mono<Authentication> authentication, ServerWebExchange exchange) {
-        final ServerHttpRequest request = exchange.getRequest();
         return authentication
                 .filter(Authentication::isAuthenticated)
-                .cast(JwtAuthenticationToken.class)
-                .map(token -> token.getToken().getTokenValue())
-                .filter(token -> !token.isBlank())
-                .flatMap(token -> evaluatePolicy(token, request))
-                .filter(KeyCloakAuthorizationResponse::isResult)
+                .flatMap(token -> evaluatePolicy(exchange))
+                .filter(KeycloakAuthorizationResponse::isResult)
                 .map(policyEvaluationResponse -> new AuthorizationDecision(true))
                 .switchIfEmpty(Mono.fromSupplier(() -> new AuthorizationDecision(false)));
     }
 
 
-    private Mono<KeyCloakAuthorizationResponse> evaluatePolicy(String token, ServerHttpRequest request) {
-        final MultiValueMap<String, String> map = buildRequestBody(request);
+    private Mono<KeycloakAuthorizationResponse> evaluatePolicy(ServerWebExchange exchange) {
+        final ServerHttpRequest request = exchange.getRequest();
+        final MultiValueMap<String, String> map = this.buildRequestBody(request);
         final BodyInserters.FormInserter<String> data = BodyInserters.fromFormData(map);
 
         final String first = request.getHeaders().toSingleValueMap().get(HttpHeaders.AUTHORIZATION);
@@ -77,32 +72,43 @@ public class MyReactiveAuthorizationManager implements ReactiveAuthorizationMana
                 .body(data)
                 .exchangeToMono(clientResponse -> {
                     if (clientResponse.statusCode().is2xxSuccessful()) {
-                        return clientResponse.bodyToMono(KeyCloakAuthorizationResponse.class);
+                        return clientResponse.bodyToMono(KeycloakAuthorizationResponse.class);
                     } else if (clientResponse.statusCode().equals(HttpStatus.UNAUTHORIZED)) {
                         return clientResponse.bodyToMono(JsonNode.class)
                                 .doOnNext(p -> System.out.println("##### Status: " + clientResponse.statusCode() + " Response:" + p))
-                                .map(ignored -> new KeyCloakAuthorizationResponse(false));
+                                .map(ignored -> new KeycloakAuthorizationResponse(false));
                     } else if (clientResponse.statusCode().equals(HttpStatus.FORBIDDEN)) {
                         return clientResponse.bodyToMono(JsonNode.class)
                                 .doOnNext(p -> System.out.println("##### Status: " + clientResponse.statusCode() + " Response:" + p))
-                                .map(ignored -> new KeyCloakAuthorizationResponse(false));
+                                .map(ignored -> new KeycloakAuthorizationResponse(false));
                     } else {
-                        return Mono.just(new KeyCloakAuthorizationResponse(false));
+                        return Mono.just(new KeycloakAuthorizationResponse(false));
                     }
                 })
                 .doOnNext(System.out::println);
     }
 
-    private static MultiValueMap<String, String> buildRequestBody(ServerHttpRequest request) {
+    final ObjectMapper mapper = new ObjectMapper();
+
+    private MultiValueMap<String, String> buildRequestBody(ServerHttpRequest request) {
         final HttpMethod methodCall = request.getMethod();
         final RequestPath path = request.getPath();
         Map<String, List<String>> claims = new HashMap<>();
         claims.put("uri_claim", List.of(request.getPath().value()));
         claims.put("request_method_claim", List.of(request.getMethod().name()));
 
+//        body.mapNotNull(p -> {
+//                    try {
+//                        return mapper.readValue(p.asInputStream(), JsonNode.class);
+//                    } catch (IOException e) {
+//                        return null;
+//                    }
+//                })
+//                .collectList()
+//                .subscribe(System.out::println);
+
         String encodedBytes;
         try {
-            final ObjectMapper mapper = new ObjectMapper();
             encodedBytes = Base64.getEncoder().encodeToString(mapper.writeValueAsBytes(claims));
         } catch (IOException e) {
             throw new RuntimeException(e);

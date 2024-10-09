@@ -7,6 +7,6 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class KeyCloakAuthorizationResponse {
+public class KeycloakAuthorizationResponse {
     private boolean result;
 }
