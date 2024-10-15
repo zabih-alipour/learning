@@ -22,6 +22,7 @@
   "standardFlowEnabled": true,
   "implicitFlowEnabled": false,
   "directAccessGrantsEnabled": true,
+  "authorizationServicesEnabled": true,
   "serviceAccountsEnabled": true,
   "publicClient": false,
   "frontchannelLogout": true,
