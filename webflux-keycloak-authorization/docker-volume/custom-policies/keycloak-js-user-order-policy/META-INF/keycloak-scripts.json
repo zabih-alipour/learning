@@ -1,0 +1,10 @@
+{
+	"policies":[
+		{
+			"name": "User Order Policy",
+			"fileName": "user-order-policy.js",
+			"description":"Orders of specific user access policy"
+		}
+	]
+	
+}

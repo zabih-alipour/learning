@@ -1,0 +1,10 @@
+{
+	"policies":[
+		{
+			"name": "Log Policy",
+			"fileName": "log-policy.js",
+			"description":"log policy"
+		}
+	]
+	
+}
