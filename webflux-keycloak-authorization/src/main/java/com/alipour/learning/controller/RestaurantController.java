@@ -36,6 +36,12 @@ public class RestaurantController {
         return restaurantRepository.findAll();
     }
 
+    @PostMapping
+    public Mono<Restaurant> createRestaurant(@RequestBody Restaurant restaurant, @AuthenticationPrincipal Principal principal) {
+        System.out.println(principal.getName());
+        return restaurantRepository.save(restaurant);
+    }
+
     @GetMapping("/public/{restaurantId}/menu")
     public Mono<Menu> getMenu(@PathVariable(name = "restaurantId") Long restaurantId) {
         return menuRepository.findByRestaurantId(restaurantId);
@@ -51,12 +57,6 @@ public class RestaurantController {
     //Public API
     public Flux<MenuItem> getMenuItem(@PathVariable(name = "menuId") Long menuId) {
         return menuItemRepository.findAllByMenuId(menuId);
-    }
-
-    @PostMapping
-    public Mono<Restaurant> createRestaurant(@RequestBody Restaurant restaurant, @AuthenticationPrincipal Principal principal) {
-        System.out.println(principal.getName());
-        return restaurantRepository.save(restaurant);
     }
 
     @PostMapping("/menu")

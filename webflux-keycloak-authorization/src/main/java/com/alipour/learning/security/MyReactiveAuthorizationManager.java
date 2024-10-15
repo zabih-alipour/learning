@@ -66,7 +66,7 @@ public class MyReactiveAuthorizationManager implements ReactiveAuthorizationMana
         final String first = request.getHeaders().toSingleValueMap().get(HttpHeaders.AUTHORIZATION);
 
         return webClient.post()
-                .uri("http://127.0.0.1:9002/realms/spring-keycloak/protocol/openid-connect/token")
+                .uri("http://127.0.0.1:9002/realms/zabix-realm/protocol/openid-connect/token")
                 .header("Authorization", first)
                 .contentType(MediaType.APPLICATION_FORM_URLENCODED)
                 .body(data)
@@ -115,7 +115,7 @@ public class MyReactiveAuthorizationManager implements ReactiveAuthorizationMana
         }
         MultiValueMap<String, String> map = new LinkedMultiValueMap<>();
         map.add("grant_type", "urn:ietf:params:oauth:grant-type:uma-ticket");
-        map.add("audience", "spring-keycloak-client");
+        map.add("audience", "zabix-client");
         map.add("response_mode", "decision");
         map.add("permission_resource_format", "uri");
         map.add("permission_resource_matching_uri", "true");
