@@ -1,6 +1,6 @@
 {
-  "clientId": "springboot-be",
-  "name": "Springboot Application",
+  "clientId": "spring-keycloak-client",
+  "name": "Webflux-keycloak-authentication",
   "description": "",
   "rootUrl": "",
   "adminUrl": "",
@@ -9,9 +9,9 @@
   "enabled": true,
   "alwaysDisplayInConsole": false,
   "clientAuthenticatorType": "client-secret",
-  "secret": "zfopel8nyMgZ4kpUADHxHOn6WI67Zurx",
+  "secret": "TA3ohEn6Dc9a9M7vtBeotPA4m6LA57LN",
   "redirectUris": [
-    "http://localhost:8080/*"
+    "*"
   ],
   "webOrigins": [
     "*"
@@ -22,7 +22,8 @@
   "standardFlowEnabled": true,
   "implicitFlowEnabled": false,
   "directAccessGrantsEnabled": true,
-  "serviceAccountsEnabled": false,
+  "authorizationServicesEnabled": true,
+  "serviceAccountsEnabled": true,
   "publicClient": false,
   "frontchannelLogout": true,
   "protocol": "openid-connect",
