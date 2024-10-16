@@ -20,6 +20,7 @@
         <module>lettuce</module>
         <module>webflux-keycloak-authentication</module>
         <module>webflux-keycloak-authorization</module>
+        <module>keycloak-custom-entpoint</module>
     </modules>
 
     <properties>

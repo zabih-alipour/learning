@@ -1,0 +1,39 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      ALLOW_EMPTY_PASSWORD: "yes"
+      POSTGRES_PASSWORD: "postgres"
+      POSTGRES_USER: "postgres"
+      POSTGRES_DB: "keycloak"
+      ALLOW_ANONYMOUS_LOGIN: "yes"
+      ALLOW_PLAINTEXT_LISTENER: "yes"
+
+  keycloak:
+    image: bitnami/keycloak:26.0.0
+    container_name: keycloak
+    depends_on:
+      - postgres
+    ports:
+      - "9002:8080"
+    volumes:
+      - ./keycloak-custom-entpoint/target/keycloak-custom-entpoint-jar-with-dependencies.jar:/opt/bitnami/keycloak/providers/keycloak-custom-entpoint.jar
+    environment:
+      KEYCLOAK_DATABASE_HOST: "postgres"
+      KEYCLOAK_CREATE_ADMIN_USER: "true"
+      KEYCLOAK_PROXY_ADDRESS_FORWARDING: "true"
+      KEYCLOAK_ADMIN_USER: "admin"
+      KEYCLOAK_ADMIN_PASSWORD: "admin"
+      KEYCLOAK_MANAGEMENT_USER: "admin2"
+      KEYCLOAK_MANAGEMENT_PASSWORD: "admin2"
+      KEYCLOAK_DATABASE_PORT: 5432
+      KEYCLOAK_DATABASE_NAME: "keycloak"
+      KEYCLOAK_DATABASE_USER: "postgres"
+      KEYCLOAK_DATABASE_PASSWORD: "postgres"
+      KEYCLOAK_DATABASE_SCHEMA: public
+      # KEYCLOAK_LOG_LEVEL: DEBUG
+      # KEYCLOAK_ROOT_LOG_LEVEL: DEBUG
+      KEYCLOAK_EXTRA_ARGS: "-Dkeycloak.profile.feature.scripts=enabled -Dkeycloak.profile.feature.upload_scripts=enabled -Dkeycloak.profile.feature.account_api=enabled"
