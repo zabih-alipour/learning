@@ -21,6 +21,7 @@
         <module>webflux-keycloak-authentication</module>
         <module>webflux-keycloak-authorization</module>
         <module>keycloak-custom-entpoint</module>
+        <module>springweb-keycloak-policy-enforcer</module>
     </modules>
 
     <properties>
