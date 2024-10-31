@@ -1,0 +1,125 @@
+{
+  "realm": "keycloak-policy-enforcer-realm",
+  "accessTokenLifespan": 3600,
+  "enabled": true,
+  "roles": {
+    "realm": [
+      {
+        "name": "ADMIN"
+      },
+      {
+        "name": "USER"
+      }
+    ]
+  },
+  "requiredCredentials": [
+    "password"
+  ],
+  "users": [
+    {
+      "username": "admin",
+      "firstName": "admin",
+      "lastName": "Liddel",
+      "email": "admin@keycloak.org",
+      "enabled": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "admin"
+        }
+      ],
+      "realmRoles": [
+        "ADMIN"
+      ]
+    },
+    {
+      "username": "user",
+      "firstName": "user",
+      "lastName": "user",
+      "email": "user@keycloak.org",
+      "enabled": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "user"
+        }
+      ],
+      "realmRoles": [
+        "USER"
+      ]
+    }
+  ],
+  "clients": [
+    {
+      "clientId": "keycloak-policy-enforcer-client",
+      "enabled": true,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "b2bf0067-6070-40b1-a90d-3df800464eca",
+      "redirectUris": [
+        "*"
+      ],
+      "directAccessGrantsEnabled": true,
+      "authorizationServicesEnabled": true,
+      "publicClient": false,
+      "frontchannelLogout": true,
+      "authorizationSettings": {
+        "allowRemoteResourceManagement": true,
+        "policyEnforcementMode": "ENFORCING",
+        "resources": [
+          {
+            "name": "Create Course Resource",
+            "uris": [
+              "/courses"
+            ],
+            "scopes": [
+              {
+                "name": "POST"
+              }
+            ]
+          },
+          {
+            "name": "Delete Course Resource",
+            "uris": [
+              "/courses/{courseId}"
+            ],
+            "scopes": [
+              {
+                "name": "DELETE"
+              }
+            ]
+          }
+        ],
+        "policies": [
+          {
+            "name": "Admin Policy",
+            "type": "role",
+            "logic": "POSITIVE",
+            "decisionStrategy": "UNANIMOUS",
+            "config": {
+              "roles": "[{\"id\":\"ADMIN\",\"required\":false}]"
+            }
+          }
+        ],
+        "scopes": [
+          {
+            "name": "POST",
+            "iconUri": ""
+          },
+          {
+            "name": "GET",
+            "iconUri": ""
+          },
+          {
+            "name": "DELETE",
+            "iconUri": ""
+          },
+          {
+            "name": "PUT",
+            "iconUri": ""
+          }
+        ],
+        "decisionStrategy": "AFFIRMATIVE"
+      }
+    }
+  ]
+}
