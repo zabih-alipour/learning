@@ -1,5 +1,6 @@
 package com.alipour.learning.springweb_keycloak_policy_enforcer.controllers;
 
+import com.alipour.learning.springweb_keycloak_policy_enforcer.dtos.CourseCreationDto;
 import com.alipour.learning.springweb_keycloak_policy_enforcer.models.Course;
 import com.alipour.learning.springweb_keycloak_policy_enforcer.services.CacheService;
 import org.springframework.http.ResponseEntity;
@@ -30,9 +31,9 @@ public class CourseController {
     }
 
     // ADMIN API
-    @PostMapping("/{title}")
-    public ResponseEntity<Course> addCourse(@PathVariable(name = "title") String title) {
-        return ResponseEntity.ok().body(cacheService.addCourse(title));
+    @PostMapping
+    public ResponseEntity<Course> addCourse(@RequestBody() CourseCreationDto creationDto) {
+        return ResponseEntity.ok().body(cacheService.addCourse(creationDto.getTitle()));
     }
 
     // ADMIN API
@@ -44,7 +45,7 @@ public class CourseController {
     // ADMIN API
     @GetMapping("/{courseId}/enrolled-users")
     public ResponseEntity<List<String>> getEnrolledUsers(@PathVariable(name = "courseId") Integer courseId) {
-        return ResponseEntity.ok().body(cacheService.getEnrolledUsers(courseId));
+        return ResponseEntity.ok(cacheService.getEnrolledUsers(courseId));
     }
 
 }

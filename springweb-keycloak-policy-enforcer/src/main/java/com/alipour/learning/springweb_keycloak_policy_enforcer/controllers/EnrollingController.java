@@ -4,7 +4,9 @@ import com.alipour.learning.springweb_keycloak_policy_enforcer.models.Course;
 import com.alipour.learning.springweb_keycloak_policy_enforcer.services.CacheService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
@@ -18,9 +20,9 @@ public class EnrollingController {
 
 
     @PostMapping("/{courseId}")
-    public ResponseEntity<Boolean> enrollCourse(@PathVariable(name = "courseId") Integer courseId,
-                                                @AuthenticationPrincipal Principal principal) {
-        cacheService.enrollCourse(courseId, principal.getName());
+    public ResponseEntity<Boolean> enrollCourse(@PathVariable(name = "courseId") Integer courseId) {
+        final Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        cacheService.enrollCourse(courseId, authentication.getName());
         return ResponseEntity.ok(Boolean.TRUE);
     }
 
