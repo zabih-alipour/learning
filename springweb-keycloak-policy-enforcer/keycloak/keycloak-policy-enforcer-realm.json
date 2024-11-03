@@ -1,17 +1,6 @@
 {
   "realm": "keycloak-policy-enforcer-realm",
-  "accessTokenLifespan": 3600,
   "enabled": true,
-  "roles": {
-    "realm": [
-      {
-        "name": "ADMIN"
-      },
-      {
-        "name": "USER"
-      }
-    ]
-  },
   "requiredCredentials": [
     "password"
   ],
@@ -19,8 +8,8 @@
     {
       "username": "admin",
       "firstName": "admin",
-      "lastName": "Liddel",
-      "email": "admin@keycloak.org",
+      "lastName": "admin",
+      "email": "alice@keycloak.org",
       "enabled": true,
       "credentials": [
         {
@@ -33,56 +22,65 @@
       ]
     },
     {
-      "username": "user",
-      "firstName": "user",
-      "lastName": "user",
-      "email": "user@keycloak.org",
+      "username": "joe",
+      "firstName": "joe",
+      "lastName": "joe",
+      "email": "jdoe@keycloak.org",
       "enabled": true,
       "credentials": [
         {
           "type": "password",
-          "value": "user"
+          "value": "joe"
         }
       ],
       "realmRoles": [
         "USER"
       ]
+    },
+    {
+      "username": "service-account-authz-servlet",
+      "enabled": true,
+      "serviceAccountClientId": "authz-servlet",
+      "clientRoles": {
+        "authz-servlet" : ["uma_protection"]
+      }
     }
   ],
+  "roles": {
+    "realm": [
+      {
+        "name": "USER",
+        "description": "User privileges"
+      },
+      {
+        "name": "ADMIN",
+        "description": "User Premium privileges"
+      }
+    ]
+  },
   "clients": [
     {
       "clientId": "keycloak-policy-enforcer-client",
       "enabled": true,
-      "clientAuthenticatorType": "client-secret",
-      "secret": "b2bf0067-6070-40b1-a90d-3df800464eca",
+      "baseUrl": "http://localhost:8564",
+      "adminUrl": "http://localhost:8564",
+      "bearerOnly": false,
       "redirectUris": [
         "*"
       ],
-      "directAccessGrantsEnabled": true,
+      "secret": "secret",
       "authorizationServicesEnabled": true,
-      "publicClient": false,
-      "frontchannelLogout": true,
+      "directAccessGrantsEnabled": true,
       "authorizationSettings": {
-        "allowRemoteResourceManagement": true,
-        "policyEnforcementMode": "ENFORCING",
         "resources": [
           {
-            "name": "Create Course Resource",
-            "uris": [
-              "/courses"
-            ],
+            "name": "Course Manipulation Resource",
+            "uri": "/courses/*",
+            "type": "http://servlet-authz/protected/resource",
             "scopes": [
               {
                 "name": "POST"
-              }
-            ]
-          },
-          {
-            "name": "Delete Course Resource",
-            "uris": [
-              "/courses/{courseId}"
-            ],
-            "scopes": [
+              },
               {
                 "name": "DELETE"
               }
@@ -91,34 +89,51 @@
         ],
         "policies": [
           {
-            "name": "Admin Policy",
+            "name": "User Policy",
+            "description": "Defines that any user can do something",
             "type": "role",
             "logic": "POSITIVE",
             "decisionStrategy": "UNANIMOUS",
             "config": {
-              "roles": "[{\"id\":\"ADMIN\",\"required\":false}]"
+              "roles": "[{\"id\":\"USER\"}]"
+            }
+          },
+          {
+            "name": "Admin User Policy",
+            "description": "Defines that only premium users can do something",
+            "type": "role",
+            "logic": "POSITIVE",
+            "decisionStrategy": "UNANIMOUS",
+            "config": {
+              "roles": "[{\"id\":\"ADMIN\"}]"
+            }
+          },
+          {
+            "name": "Create Course Resource Permission",
+            "description": "A policy that defines access to public resources",
+            "type": "resource",
+            "logic": "POSITIVE",
+            "decisionStrategy": "UNANIMOUS",
+            "config": {
+              "resources": "[\"Courses Public Resource\"]",
+              "applyPolicies": "[\"Admin User Policy\"]"
             }
           }
         ],
         "scopes": [
           {
-            "name": "POST",
-            "iconUri": ""
+            "name": "GET"
           },
           {
-            "name": "GET",
-            "iconUri": ""
+            "name": "POST"
           },
           {
-            "name": "DELETE",
-            "iconUri": ""
+            "name": "DELETE"
           },
           {
-            "name": "PUT",
-            "iconUri": ""
+            "name": "PUT"
           }
-        ],
-        "decisionStrategy": "AFFIRMATIVE"
+        ]
       }
     }
   ]

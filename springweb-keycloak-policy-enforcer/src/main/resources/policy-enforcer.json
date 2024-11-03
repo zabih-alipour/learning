@@ -1,0 +1,11 @@
+{
+  "realm": "keycloak-policy-enforcer-realm",
+  "auth-server-url": "http://127.0.0.1:9002",
+  "resource": "keycloak-policy-enforcer-client",
+  "credentials": {
+    "secret": "b2bf0067-6070-40b1-a90d-3df800464eca"
+  },
+  "enforcement-mode": "ENFORCING",
+  "http-method-as-scope": true
+
+}
