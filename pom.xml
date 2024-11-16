@@ -16,12 +16,13 @@
         <module>spring-integration</module>
         <module>local-cache-coffeine</module>
         <module>jackson</module>
-        <module>reactor</module>
+        <module>webflux-reactor-netty</module>
         <module>lettuce</module>
         <module>webflux-keycloak-authentication</module>
         <module>webflux-keycloak-authorization</module>
         <module>keycloak-custom-entpoint</module>
         <module>springweb-keycloak-policy-enforcer</module>
+        <module>webflux-tomcat</module>
     </modules>
 
     <properties>
