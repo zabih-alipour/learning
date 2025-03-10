@@ -18,7 +18,7 @@ import java.util.Random;
 /**
  * Hello world!
  */
-public class L01LocalCacheMap {
+public class L01LocalCacheMap3 {
     static RedissionConfig config = new RedissionConfig();
 
     public static void main(String[] args) {
@@ -30,9 +30,9 @@ public class L01LocalCacheMap {
                 .subscribe(System.out::println);
 
 
-        LocalCachedMapOptions<Integer, Student> mapOptions = LocalCachedMapOptions.name("student-cache2");
+        LocalCachedMapOptions<Integer, Student> mapOptions = LocalCachedMapOptions.name("student-cache3");
         mapOptions.syncStrategy(LocalCachedMapOptions.SyncStrategy.UPDATE);
-        mapOptions.reconnectionStrategy(LocalCachedMapOptions.ReconnectionStrategy.NONE);
+        mapOptions.reconnectionStrategy(LocalCachedMapOptions.ReconnectionStrategy.LOAD);
         mapOptions.codec(new TypedJsonJacksonCodec(String.class, Student.class));
         mapOptions.writeMode(WriteMode.WRITE_THROUGH);
         mapOptions.writeRetryAttempts(2);
