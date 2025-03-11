@@ -1,0 +1,598 @@
+[0.025s][debug][gc,heap] Minimum heap 8388608  Initial heap 524288000  Maximum heap 8369733632
+[0.026s][info ][gc,init] Initializing The Z Garbage Collector
+[0.026s][info ][gc,init] Version: 21.0.5+11-LTS (release)
+[0.026s][info ][gc,init] Using legacy single-generation mode
+[0.026s][info ][gc,init] NUMA Support: Disabled
+[0.026s][info ][gc,init] CPUs: 8 total, 8 available
+[0.026s][info ][gc,init] Memory: 31923M
+[0.026s][info ][gc,init] Large Page Support: Disabled
+[0.026s][info ][gc,init] GC Workers: 2 (dynamic)
+[0.028s][info ][gc,init] Address Space Type: Contiguous/Unrestricted/Complete
+[0.028s][info ][gc,init] Address Space Size: 127712M x 3 = 383136M
+[0.028s][info ][gc,init] Heap Backing File: /memfd:java_heap
+[0.028s][info ][gc,init] Heap Backing Filesystem: tmpfs (0x1021994)
+[0.028s][info ][gc,init] Min Capacity: 8M
+[0.028s][info ][gc,init] Initial Capacity: 500M
+[0.028s][info ][gc,init] Max Capacity: 7982M
+[0.028s][info ][gc,init] Medium Page Size: 32M
+[0.028s][info ][gc,init] Pre-touch: Disabled
+[0.028s][info ][gc,init] Available space on backing filesystem: N/A
+[0.031s][info ][gc,init] Uncommit: Enabled
+[0.031s][info ][gc,init] Uncommit Delay: 300s
+[0.164s][debug][gc,marking] Expanding mark stack space: 0M->32M
+[0.165s][info ][gc,init   ] Runtime Workers: 5
+[0.166s][info ][gc        ] Using The Z Garbage Collector
+[0.180s][info ][gc,metaspace] CDS archive(s) mapped at: [0x000073a257000000-0x000073a257c97000-0x000073a257c97000), size 13201408, SharedBaseAddress: 0x000073a257000000, ArchiveRelocationMode: 1.
+[0.180s][info ][gc,metaspace] Compressed class space mapped at: 0x000073a258000000-0x000073a298000000, reserved size: 1073741824
+[0.180s][info ][gc,metaspace] Narrow klass base: 0x000073a257000000, Narrow klass shift: 0, Narrow klass range: 0x100000000
+[0.189s][debug][gc,heap     ] Uncommit Timeout: 301s
+[0.191s][debug][gc,nmethod  ] Rebuilding NMethod Table: 0->1024 entries, 0(0%->0%) registered, 0(0%->0%) unregistered
+[0.289s][debug][gc,alloc    ] Allocation Rate: 4.0MB/s, Predicted: 4.0MB/s, Avg: 4.0(+/-0.0)MB/s
+[0.289s][debug][gc,director ] Rule: Warmup 10%, Used: 10MB, UsedThreshold: 798MB
+[0.289s][debug][gc,director ] Rule: High Usage, Free: 7936MB(99.4%)
+[0.389s][debug][gc,alloc    ] Allocation Rate: 36.0MB/s, Predicted: 68.0MB/s, Avg: 20.0(+/-16.0)MB/s
+[0.389s][debug][gc,director ] Rule: Warmup 10%, Used: 42MB, UsedThreshold: 798MB
+[0.389s][debug][gc,director ] Rule: High Usage, Free: 7904MB(99.0%)
+[0.489s][debug][gc,alloc    ] Allocation Rate: 38.0MB/s, Predicted: 60.0MB/s, Avg: 26.0(+/-15.6)MB/s
+[0.490s][debug][gc,director ] Rule: Warmup 10%, Used: 44MB, UsedThreshold: 798MB
+[0.490s][debug][gc,director ] Rule: High Usage, Free: 7902MB(99.0%)
+[0.590s][debug][gc,alloc    ] Allocation Rate: 40.0MB/s, Predicted: 57.0MB/s, Avg: 29.5(+/-14.8)MB/s
+[0.590s][debug][gc,director ] Rule: Warmup 10%, Used: 46MB, UsedThreshold: 798MB
+[0.590s][debug][gc,director ] Rule: High Usage, Free: 7900MB(99.0%)
+[0.594s][debug][gc,nmethod  ] Rebuilding NMethod Table: 1024->2048 entries, 717(70%->35%) registered, 0(0%->0%) unregistered
+[0.690s][debug][gc,alloc    ] Allocation Rate: 48.0MB/s, Predicted: 60.8MB/s, Avg: 33.2(+/-15.2)MB/s
+[0.690s][debug][gc,director ] Rule: Warmup 10%, Used: 54MB, UsedThreshold: 798MB
+[0.690s][debug][gc,director ] Rule: High Usage, Free: 7892MB(98.9%)
+[0.790s][debug][gc,alloc    ] Allocation Rate: 66.0MB/s, Predicted: 73.5MB/s, Avg: 38.7(+/-18.5)MB/s
+[0.790s][debug][gc,director ] Rule: Warmup 10%, Used: 72MB, UsedThreshold: 798MB
+[0.790s][debug][gc,director ] Rule: High Usage, Free: 7874MB(98.6%)
+[0.890s][debug][gc,alloc    ] Allocation Rate: 200.0MB/s, Predicted: 155.7MB/s, Avg: 61.7(+/-59.0)MB/s
+[0.890s][debug][gc,director ] Rule: Warmup 10%, Used: 206MB, UsedThreshold: 798MB
+[0.890s][debug][gc,director ] Rule: High Usage, Free: 7740MB(97.0%)
+[0.989s][debug][gc,alloc    ] Allocation Rate: 338.0MB/s, Predicted: 270.4MB/s, Avg: 96.2(+/-106.7)MB/s
+[0.989s][debug][gc,director ] Rule: Warmup 10%, Used: 344MB, UsedThreshold: 798MB
+[0.989s][debug][gc,director ] Rule: High Usage, Free: 7602MB(95.2%)
+[1.089s][debug][gc,alloc    ] Allocation Rate: 476.0MB/s, Predicted: 400.4MB/s, Avg: 138.4(+/-156.1)MB/s
+[1.089s][debug][gc,director ] Rule: Warmup 10%, Used: 482MB, UsedThreshold: 798MB
+[1.089s][debug][gc,director ] Rule: High Usage, Free: 7464MB(93.5%)
+[1.190s][debug][gc,alloc    ] Allocation Rate: 580.0MB/s, Predicted: 524.7MB/s, Avg: 182.6(+/-198.7)MB/s
+[1.190s][debug][gc,director ] Rule: Warmup 10%, Used: 588MB, UsedThreshold: 798MB
+[1.190s][debug][gc,director ] Rule: High Usage, Free: 7358MB(92.2%)
+[1.290s][debug][gc,alloc    ] Allocation Rate: 678.0MB/s, Predicted: 675.2MB/s, Avg: 250.0(+/-237.3)MB/s
+[1.290s][debug][gc,director ] Rule: Warmup 10%, Used: 688MB, UsedThreshold: 798MB
+[1.290s][debug][gc,director ] Rule: High Usage, Free: 7258MB(90.9%)
+[1.390s][debug][gc,alloc    ] Allocation Rate: 750.0MB/s, Predicted: 818.1MB/s, Avg: 321.4(+/-267.6)MB/s
+[1.390s][debug][gc,director ] Rule: Warmup 10%, Used: 792MB, UsedThreshold: 798MB
+[1.390s][debug][gc,director ] Rule: High Usage, Free: 7154MB(89.6%)
+[1.490s][debug][gc,alloc    ] Allocation Rate: 854.0MB/s, Predicted: 955.6MB/s, Avg: 403.0(+/-292.0)MB/s
+[1.490s][debug][gc,director ] Rule: Warmup 10%, Used: 898MB, UsedThreshold: 798MB
+[1.490s][debug][gc,heap     ] GC(0) Heap before GC invocations=0 (full 0):
+[1.490s][debug][gc,heap     ] GC(0)  ZHeap           used 898M, capacity 898M, max capacity 7982M
+[1.490s][debug][gc,heap     ] GC(0)  Metaspace       used 9615K, committed 9856K, reserved 1114112K
+[1.490s][debug][gc,heap     ] GC(0)   class space    used 1101K, committed 1216K, reserved 1048576K
+[1.490s][info ][gc,start    ] GC(0) Garbage Collection (Warmup)
+[1.490s][info ][gc,task     ] GC(0) Using 2 workers
+[1.490s][debug][gc,phases,start] GC(0) Pause Mark Start
+[1.491s][debug][gc,marking     ] GC(0) Using 2 mark stripes
+[1.491s][debug][gc,marking     ] GC(0) Mark Worker/Stripe Distribution
+[1.491s][debug][gc,marking     ] GC(0)   Worker 0(2) -> Stripe 0(2)
+[1.491s][debug][gc,marking     ] GC(0)   Worker 1(2) -> Stripe 1(2)
+[1.491s][info ][gc,phases      ] GC(0) Pause Mark Start 0.055ms
+[1.491s][debug][gc,phases,start] GC(0) Concurrent Mark
+[1.491s][debug][gc,task        ] GC(0) Executing Task: XMarkRootsTask, Active Workers: 2
+[1.491s][debug][gc,tlab        ] GC(0) TLAB totals: thrds: 6  refills: 3438 max: 3433 slow allocs: 293 max 293 waste:  0.5% gc: 1413312B max: 262064B slow: 3332112B max: 3332112B
+[1.491s][debug][gc,task        ] GC(0) Executing Task: XMarkTask, Active Workers: 2
+[1.496s][info ][gc,phases      ] GC(0) Concurrent Mark 5.882ms
+[1.497s][debug][gc,phases,start] GC(0) Pause Mark End
+[1.497s][info ][gc,phases      ] GC(0) Pause Mark End 0.019ms
+[1.497s][debug][gc,phases,start] GC(0) Concurrent Mark Free
+[1.497s][info ][gc,phases      ] GC(0) Concurrent Mark Free 0.039ms
+[1.497s][debug][gc,phases,start] GC(0) Concurrent Process Non-Strong References
+[1.497s][debug][gc,phases,start] GC(0) Concurrent References Process
+[1.497s][debug][gc,task        ] GC(0) Executing Task: XReferenceProcessorTask, Active Workers: 2
+[1.497s][debug][gc,phases      ] GC(0) Concurrent References Process 0.173ms
+[1.497s][debug][gc,task        ] GC(0) Executing Task: XProcessWeakRootsTask, Active Workers: 2
+[1.497s][debug][gc,phases,start] GC(0) Concurrent Classes Unlink
+[1.497s][debug][gc,phases,start] GC(0) ClassLoaderData
+[1.497s][debug][gc,phases      ] GC(0) ClassLoaderData 0.012ms
+[1.497s][debug][gc,phases,start] GC(0) Trigger cleanups
+[1.497s][debug][gc,phases      ] GC(0) Trigger cleanups 0.003ms
+[1.497s][debug][gc,task        ] GC(0) Executing Task: XNMethodUnlinkTask, Active Workers: 2
+[1.498s][debug][gc,phases      ] GC(0) Concurrent Classes Unlink 0.938ms
+[1.498s][debug][gc,phases,start] GC(0) Concurrent Classes Purge
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.Math.max (0x000073a4e0016090)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.invoke.DirectMethodHandle$Holder.invokeStatic (0x000073a4e022c610)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.StringLatin1.newString (0x000073a4e0034390)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: jdk.internal.jimage.ImageStringsReader.unmaskedHashCode (0x000073a4e0035c10)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.StringBuilder.toString (0x000073a4e003c010)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.ref.Reference.reachabilityFence (0x000073a4e002a810)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.HashMap.putVal (0x000073a4e00fff90)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial (0x000073a4e00fb510)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.StringBuilder.append (0x000073a4e0030610)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.regex.Matcher.reset (0x000073a4e00ef790)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.util.Convert.chars2utf (0x000073a4e00b3510)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.code.Type$MethodType.getTag (0x000073a4e01dd490)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.StringLatin1.replace (0x000073a4e7af3b10)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.util.List.nil (0x000073a4e00cc490)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.util.ArrayUtils.ensureCapacity (0x000073a4e00b3d10)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: jdk.internal.jimage.BasicImageReader.getString (0x000073a4e00eaf90)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.regex.Matcher.match (0x000073a4e0162290)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.HashMap.hash (0x000073a4e0016890)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.StringBuilder.append (0x000073a4e0032210)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.Integer.getChars (0x000073a4e01b1890)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.invoke.DirectMethodHandle$Holder.invokeStatic (0x000073a4e022f890)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.HashMap.get (0x000073a4e001c610)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: jdk.internal.misc.Unsafe.putReferenceRelease (0x000073a4e0031610)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.CharacterData.of (0x000073a4e0163610)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.Object.<init> (0x000073a4e7acab90)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.StringLatin1.indexOf (0x000073a4e002fd10)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.jvm.PoolReader.sizeof (0x000073a4e7b05690)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.AbstractStringBuilder.<init> (0x000073a4e003bb90)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.util.List$2.next (0x000073a4e0132890)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.invoke.LambdaForm$MH/0x000073a258031c00.invoke (0x000073a4e022e710)
+[1.505s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.jvm.ClassReader.nextChar (0x000073a4e010ae10)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.CharacterDataLatin1.getProperties (0x000073a4e0164390)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: jdk.internal.misc.Unsafe.allocateUninitializedArray (0x000073a4e004b790)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.HashMap.putVal (0x000073a4e0018f90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.nio.Buffer.session (0x000073a4e002b610)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.CharacterDataLatin1.isJavaIdentifierPart (0x000073a4e0163190)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.code.Type$ClassType.getTag (0x000073a4e01d8d90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.String.<init> (0x000073a4e00e2890)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.util.Assert.checkNonNull (0x000073a4e00cb010)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.util.Name$Table.equals (0x000073a4e00cb510)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.HashMap.resize (0x000073a4e001fc90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.String.equals (0x000073a4e0003f90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.StringLatin1.lastIndexOf (0x000073a4e0165990)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.StringConcatHelper.newString (0x000073a4e008e110)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.util.SharedNameTable.fromUtf (0x000073a4e00ed490)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.String.charAt (0x000073a4e0008890)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.HashMap.put (0x000073a4e0018990)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.String.codePointAt (0x000073a4e00ec510)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.jvm.PoolReader.sizeof (0x000073a4e0103b10)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: jdk.internal.util.ArraysSupport.signedHashCode (0x000073a4e0000310)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.AbstractStringBuilder.append (0x000073a4e0030990)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.regex.Pattern$BmpCharPropertyGreedy.match (0x000073a4e0042410)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.regex.Pattern.nextEscaped (0x000073a4e00f0f10)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: jdk.internal.jimage.ImageLocation.getAttribute (0x000073a4e003ee90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.invoke.Invokers$Holder.linkToTargetMethod (0x000073a4e022b210)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.concurrent.ConcurrentHashMap.setTabAt (0x000073a4e0031990)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.AbstractStringBuilder.ensureCapacityInternal (0x000073a4e0026710)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.alpour.learning.garbege_collectors.ZGCExample.main (0x000073a4e0230410)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.regex.Pattern$Node.study (0x000073a4e00fb010)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.invoke.MethodType.parameterType (0x000073a4e0046490)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: jdk.internal.misc.Unsafe.allocateUninitializedArray (0x000073a4e7b3b790)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.concurrent.ConcurrentHashMap.casTabAt (0x000073a4e0025610)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.Object.equals (0x000073a4e0021b90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.StringConcatHelper.newArray (0x000073a4e004ae10)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.AbstractStringBuilder.newCapacity (0x000073a4e0048e90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.util.ArrayUtils.ensureCapacity (0x000073a4e7b30190)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.invoke.DirectMethodHandle$Holder.invokeStatic (0x000073a4e022d410)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.util.ByteBuffer.verifyRange (0x000073a4e0102790)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.nio.DirectByteBuffer.ix (0x000073a4e002e590)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: jdk.internal.org.objectweb.asm.SymbolTable.addConstantUtf8 (0x000073a4e0053390)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.invoke.LambdaForm$MH/0x000073a258032c00.invoke (0x000073a4e022b790)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.jvm.PoolReader$ImmutablePoolHelper.readIfNeeded (0x000073a4e0117390)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: jdk.internal.org.objectweb.asm.SymbolTable.put (0x000073a4e0052310)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: jdk.internal.jimage.ImageLocation.readValue (0x000073a4e0038b90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: jdk.internal.org.objectweb.asm.SymbolTable$Entry.<init> (0x000073a4e0063e10)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.util.ByteBuffer.getChar (0x000073a4e0106110)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: jdk.internal.jimage.BasicImageReader.getLocationIndex (0x000073a4e0093890)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.util.ByteBuffer.getByte (0x000073a4e0103690)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.Object.<init> (0x000073a4e0000010)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.StringConcatHelper.mix (0x000073a4e022da90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.util.Name$Table.hashValue (0x000073a4e00b3090)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.invoke.DirectMethodHandle.internalMemberName (0x000073a4e022ad90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.String.substring (0x000073a4e0033410)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.HashMap.afterNodeInsertion (0x000073a4e001ce90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.util.SharedNameTable$NameImpl.getByteArray (0x000073a4e00cab10)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.regex.Pattern.next (0x000073a4e00fa310)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.HashMap.getOrDefault (0x000073a4e010b810)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.String.substring (0x000073a4e7b17a90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.Character.isJavaIdentifierPart (0x000073a4e0162d10)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: jdk.internal.misc.Unsafe.allocateUninitializedArray0 (0x000073a4e003e290)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.invoke.LambdaForm$MH/0x000073a258032800.invoke (0x000073a4e022cd90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.AbstractStringBuilder.append (0x000073a4e0032590)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: jdk.internal.org.objectweb.asm.Symbol.<init> (0x000073a4e0051f10)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.nio.DirectByteBuffer.get (0x000073a4e002d510)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.util.Names.fromUtf (0x000073a4e0123c10)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.HashMap$Node.<init> (0x000073a4e001ca90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.util.List.setTail (0x000073a4e01dd810)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.ImmutableCollections$SetN$SetNIterator.hasNext (0x000073a4e0009490)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: jdk.internal.org.objectweb.asm.ByteVector.putShort (0x000073a4e004d010)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.Integer.stringSize (0x000073a4e01b1410)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.invoke.DirectMethodHandle$Holder.invokeStatic (0x000073a4e022e010)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.String.indexOf (0x000073a4e0029f90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.Arrays.copyOfRange (0x000073a4e002bf10)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: jdk.internal.util.ReferencedKeyMap.removeStaleReferences (0x000073a4e000e710)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.util.Name.lastIndexOf (0x000073a4e00cc790)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.invoke.MethodType.parameterCount (0x000073a4e0035890)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: jdk.internal.jimage.ImageStringsReader.stringFromByteBufferMatches (0x000073a4e7aefa10)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.StringBuilder.<init> (0x000073a4e004aa90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.regex.Pattern.append (0x000073a4e00fa890)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.String.coder (0x000073a4e0007a90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.util.Name.getBytes (0x000073a4e00ecd90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: jdk.internal.jimage.BasicImageReader.findLocation (0x000073a4e0098710)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: jdk.internal.jimage.ImageStringsReader.stringFromByteBuffer (0x000073a4e00e1910)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.concurrent.ConcurrentHashMap.get (0x000073a4e000f610)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: jdk.internal.org.objectweb.asm.ByteVector.putByte (0x000073a4e0063590)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: jdk.internal.util.ArraysSupport.vectorizedHashCode (0x000073a4e0002390)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.StringLatin1.replace (0x000073a4e00d8f10)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.StringLatin1.replace (0x000073a4e003c890)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.String.isEmpty (0x000073a4e000df90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.HashMap.putVal (0x000073a4e0016d10)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.module.ModuleDescriptor$Exports.isQualified (0x000073a4e001e590)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.util.List$2.hasNext (0x000073a4e012b790)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.ImmutableCollections$SetN$SetNIterator.next (0x000073a4e0009d90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.HashMap.put (0x000073a4e7b10190)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.jvm.Code.width (0x000073a4e01e4010)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.StringConcatHelper.prepend (0x000073a4e004ec90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.String.<init> (0x000073a4e00eb590)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.HashMap.putVal (0x000073a4e7ad7e90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: jdk.internal.jrtfs.JrtPath.normalize (0x000073a4e00fe810)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: jdk.internal.misc.ScopedMemoryAccess.getByte (0x000073a4e002e890)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.ref.NativeReferenceQueue.poll (0x000073a4e0011190)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: jdk.internal.util.ArraysSupport.mismatch (0x000073a4e005ca90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.StringLatin1.indexOfChar (0x000073a4e0029690)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.util.ListBuffer.toList (0x000073a4e012d510)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: jdk.internal.jimage.ImageLocation.getAttributeString (0x000073a4e00e9a90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.util.List.of (0x000073a4e010c810)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.String.toString (0x000073a4e0043990)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.String.replace (0x000073a4e0058590)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.StringLatin1.indexOf (0x000073a4e00f9a10)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.String.isLatin1 (0x000073a4e0001b90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.jvm.PoolReader$ImmutablePoolHelper.checkIndex (0x000073a4e0109290)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.Character.charCount (0x000073a4e005a410)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.Integer.bitCount (0x000073a4e01df610)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.StringLatin1.indexOf (0x000073a4e0097990)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.StringCoding.countPositives (0x000073a4e00db190)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.StringConcatHelper.prepend (0x000073a4e022ee90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: jdk.internal.jimage.ImageStringsReader.stringFromByteBufferMatches (0x000073a4e0036c90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.HashMap.newNode (0x000073a4e0018490)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.nio.DirectIntBufferU.ix (0x000073a4e005a090)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.StringLatin1.lastIndexOf (0x000073a4e002f610)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.StringLatin1.inflate (0x000073a4e00a5e90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.invoke.MemberName.getModifiers (0x000073a4e006c810)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.util.Convert.utf2chars (0x000073a4e0107a90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.invoke.MemberName.getReferenceKind (0x000073a4e006b790)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.String.hashCode (0x000073a4e0000790)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.String.<init> (0x000073a4e0046890)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.String.startsWith (0x000073a4e0068b90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.HashMap.getNode (0x000073a4e001a890)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.String.length (0x000073a4e0007e10)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.regex.Pattern.skip (0x000073a4e00fe410)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.Objects.requireNonNull (0x000073a4e0005410)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: jdk.internal.org.objectweb.asm.ByteVector.putUTF8 (0x000073a4e004bf90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.String.<init> (0x000073a4e0230010)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.String.<init> (0x000073a4e7b14710)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.regex.Pattern.peek (0x000073a4e0044010)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.Collections.emptyMap (0x000073a4e00ccf90)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.String.getBytes (0x000073a4e0015a10)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.regex.Pattern.unread (0x000073a4e00f1310)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.HashMap.putVal (0x000073a4e7b0e990)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.util.concurrent.ConcurrentHashMap.tabAt (0x000073a4e0009810)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: java.lang.StringLatin1.hashCode (0x000073a4e0001f10)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: com.sun.tools.javac.jvm.ClassReader.classSigToType (0x000073a4e01bc610)
+[1.506s][debug][gc,nmethod     ] GC(0) Unregister NMethod: jdk.internal.jimage.ImageStringsReader.charsFromByteBufferLength (0x000073a4e00e0b90)
+[1.506s][debug][gc,phases      ] GC(0) Concurrent Classes Purge 7.855ms
+[1.506s][debug][gc,phases,start] GC(0) Concurrent References Enqueue
+[1.506s][debug][gc,phases      ] GC(0) Concurrent References Enqueue 0.011ms
+[1.506s][info ][gc,phases      ] GC(0) Concurrent Process Non-Strong References 9.397ms
+[1.506s][debug][gc,phases,start] GC(0) Concurrent Reset Relocation Set
+[1.506s][info ][gc,phases      ] GC(0) Concurrent Reset Relocation Set 0.004ms
+[1.506s][debug][gc,phases,start] GC(0) Concurrent Select Relocation Set
+[1.515s][debug][gc,task        ] GC(0) Executing Task: XRelocationSetInstallTask, Active Workers: 2
+[1.515s][info ][gc,phases      ] GC(0) Concurrent Select Relocation Set 8.894ms
+[1.515s][debug][gc,phases,start] GC(0) Pause Relocate Start
+[1.515s][info ][gc,phases      ] GC(0) Pause Relocate Start 0.019ms
+[1.515s][debug][gc,phases,start] GC(0) Concurrent Relocate
+[1.515s][debug][gc,task        ] GC(0) Executing Task: XRelocateTask, Active Workers: 2
+[1.519s][info ][gc,phases      ] GC(0) Concurrent Relocate 3.159ms
+[1.519s][debug][gc,heap        ] GC(0) Heap after GC invocations=1 (full 1):
+[1.519s][debug][gc,heap        ] GC(0)  ZHeap           used 78M, capacity 914M, max capacity 7982M
+[1.519s][debug][gc,heap        ] GC(0)  Metaspace       used 9619K, committed 9856K, reserved 1114112K
+[1.519s][debug][gc,heap        ] GC(0)   class space    used 1101K, committed 1216K, reserved 1048576K
+[1.519s][info ][gc,load        ] GC(0) Load: 1.28/1.03/1.01
+[1.519s][info ][gc,mmu         ] GC(0) MMU: 2ms/97.2%, 5ms/98.9%, 10ms/99.3%, 20ms/99.6%, 50ms/99.8%, 100ms/99.9%
+[1.519s][info ][gc,marking     ] GC(0) Mark: 2 stripe(s), 2 proactive flush(es), 1 terminate flush(es), 0 completion(s), 0 continuation(s) 
+[1.519s][info ][gc,marking     ] GC(0) Mark Stack Usage: 32M
+[1.519s][info ][gc,nmethod     ] GC(0) NMethods: 1185 registered, 173 unregistered
+[1.519s][info ][gc,metaspace   ] GC(0) Metaspace: 9M used, 9M committed, 1088M reserved
+[1.519s][info ][gc,ref         ] GC(0) Soft: 207 encountered, 0 discovered, 0 enqueued
+[1.519s][info ][gc,ref         ] GC(0) Weak: 1097 encountered, 398 discovered, 297 enqueued
+[1.519s][info ][gc,ref         ] GC(0) Final: 0 encountered, 0 discovered, 0 enqueued
+[1.519s][info ][gc,ref         ] GC(0) Phantom: 200 encountered, 198 discovered, 197 enqueued
+[1.519s][info ][gc,reloc       ] GC(0) Small Pages: 433 / 866M, Empty: 834M, Relocated: 2M, In-Place: 0
+[1.519s][info ][gc,reloc       ] GC(0) Medium Pages: 1 / 32M, Empty: 0M, Relocated: 0M, In-Place: 0
+[1.519s][info ][gc,reloc       ] GC(0) Large Pages: 0 / 0M, Empty: 0M, Relocated: 0M, In-Place: 0
+[1.519s][info ][gc,reloc       ] GC(0) Forwarding Usage: 1M
+[1.519s][info ][gc,heap        ] GC(0) Min Capacity: 8M(0%)
+[1.519s][info ][gc,heap        ] GC(0) Max Capacity: 7982M(100%)
+[1.519s][info ][gc,heap        ] GC(0) Soft Max Capacity: 7982M(100%)
+[1.519s][info ][gc,heap        ] GC(0)                Mark Start          Mark End        Relocate Start      Relocate End           High               Low         
+[1.519s][info ][gc,heap        ] GC(0)  Capacity:      898M (11%)         904M (11%)         914M (11%)         914M (11%)         914M (11%)         898M (11%)    
+[1.519s][info ][gc,heap        ] GC(0)      Free:     7084M (89%)        7078M (89%)        7888M (99%)        7904M (99%)        7904M (99%)        7068M (89%)    
+[1.519s][info ][gc,heap        ] GC(0)      Used:      898M (11%)         904M (11%)          94M (1%)           78M (1%)          914M (11%)          78M (1%)     
+[1.519s][info ][gc,heap        ] GC(0)      Live:         -                 3M (0%)            3M (0%)            3M (0%)             -                  -          
+[1.519s][info ][gc,heap        ] GC(0) Allocated:         -                 6M (0%)           30M (0%)           39M (1%)             -                  -          
+[1.519s][info ][gc,heap        ] GC(0)   Garbage:         -               894M (11%)          60M (1%)           34M (0%)             -                  -          
+[1.519s][info ][gc,heap        ] GC(0) Reclaimed:         -                  -               834M (10%)         859M (11%)            -                  -          
+[1.519s][info ][gc             ] GC(0) Garbage Collection (Warmup) 898M(11%)->78M(1%)
+[1.589s][debug][gc,alloc       ] Allocation Rate: 1236.0MB/s, Predicted: 1192.0MB/s, Avg: 522.6(+/-356.6)MB/s
+[1.589s][debug][gc,director    ] Rule: Warmup 20%, Used: 422MB, UsedThreshold: 1596MB
+[1.589s][debug][gc,director    ] Select GC Workers (Not Warm), GCWorkers: 2.000
+[1.589s][debug][gc,director    ] Rule: Allocation Rate (Dynamic GC Workers), MaxAllocRate: 2365.6MB/s (+/-68.2%), Free: 7524MB, GCCPUTime: 0.039, GCDuration: 0.028s, TimeUntilOOM: 1.890s, TimeUntilGC: 1.762s, GCWorkers: 2 -> 2
+[1.589s][debug][gc,director    ] Rule: High Usage, Free: 7524MB(94.3%)
+[1.689s][debug][gc,alloc       ] Allocation Rate: 1724.0MB/s, Predicted: 1546.0MB/s, Avg: 690.2(+/-470.0)MB/s
+[1.689s][debug][gc,director    ] Rule: Warmup 20%, Used: 918MB, UsedThreshold: 1596MB
+[1.690s][debug][gc,director    ] Select GC Workers (Not Warm), GCWorkers: 2.000
+[1.690s][debug][gc,director    ] Rule: Allocation Rate (Dynamic GC Workers), MaxAllocRate: 3092.6MB/s (+/-68.1%), Free: 7028MB, GCCPUTime: 0.039, GCDuration: 0.028s, TimeUntilOOM: 1.352s, TimeUntilGC: 1.224s, GCWorkers: 2 -> 2
+[1.690s][debug][gc,director    ] Rule: High Usage, Free: 7028MB(88.0%)
+[1.790s][debug][gc,alloc       ] Allocation Rate: 1812.0MB/s, Predicted: 1828.3MB/s, Avg: 864.8(+/-526.6)MB/s
+[1.790s][debug][gc,director    ] Rule: Warmup 20%, Used: 1024MB, UsedThreshold: 1596MB
+[1.790s][debug][gc,director    ] Select GC Workers (Not Warm), GCWorkers: 2.000
+[1.790s][debug][gc,director    ] Rule: Allocation Rate (Dynamic GC Workers), MaxAllocRate: 3561.1MB/s (+/-60.9%), Free: 6922MB, GCCPUTime: 0.039, GCDuration: 0.028s, TimeUntilOOM: 1.208s, TimeUntilGC: 1.080s, GCWorkers: 2 -> 2
+[1.790s][debug][gc,director    ] Rule: High Usage, Free: 6922MB(86.7%)
+[1.890s][debug][gc,alloc       ] Allocation Rate: 1782.0MB/s, Predicted: 2017.9MB/s, Avg: 1023.0(+/-540.6)MB/s
+[1.890s][debug][gc,director    ] Rule: Warmup 20%, Used: 1128MB, UsedThreshold: 1596MB
+[1.890s][debug][gc,director    ] Select GC Workers (Not Warm), GCWorkers: 2.000
+[1.890s][debug][gc,director    ] Rule: Allocation Rate (Dynamic GC Workers), MaxAllocRate: 3796.6MB/s (+/-52.8%), Free: 6818MB, GCCPUTime: 0.039, GCDuration: 0.028s, TimeUntilOOM: 1.175s, TimeUntilGC: 1.047s, GCWorkers: 2 -> 2
+[1.890s][debug][gc,director    ] Rule: High Usage, Free: 6818MB(85.4%)
+[1.990s][debug][gc,alloc       ] Allocation Rate: 1746.0MB/s, Predicted: 2124.4MB/s, Avg: 1163.8(+/-527.0)MB/s
+[1.990s][debug][gc,director    ] Rule: Warmup 20%, Used: 1232MB, UsedThreshold: 1596MB
+[1.990s][debug][gc,director    ] Select GC Workers (Not Warm), GCWorkers: 2.000
+[1.990s][debug][gc,director    ] Rule: Allocation Rate (Dynamic GC Workers), MaxAllocRate: 3858.6MB/s (+/-45.3%), Free: 6714MB, GCCPUTime: 0.039, GCDuration: 0.028s, TimeUntilOOM: 1.198s, TimeUntilGC: 1.069s, GCWorkers: 2 -> 2
+[1.990s][debug][gc,director    ] Rule: High Usage, Free: 6714MB(84.1%)
+[2.089s][debug][gc,alloc       ] Allocation Rate: 1712.0MB/s, Predicted: 2160.3MB/s, Avg: 1287.4(+/-495.2)MB/s
+[2.089s][debug][gc,director    ] Rule: Warmup 20%, Used: 1336MB, UsedThreshold: 1596MB
+[2.089s][debug][gc,director    ] Select GC Workers (Not Warm), GCWorkers: 2.000
+[2.089s][debug][gc,director    ] Rule: Allocation Rate (Dynamic GC Workers), MaxAllocRate: 3789.7MB/s (+/-38.5%), Free: 6610MB, GCCPUTime: 0.039, GCDuration: 0.028s, TimeUntilOOM: 1.260s, TimeUntilGC: 1.131s, GCWorkers: 2 -> 2
+[2.089s][debug][gc,director    ] Rule: High Usage, Free: 6610MB(82.8%)
+[2.189s][debug][gc,alloc       ] Allocation Rate: 1708.0MB/s, Predicted: 2139.9MB/s, Avg: 1400.2(+/-447.4)MB/s
+[2.189s][debug][gc,director    ] Rule: Warmup 20%, Used: 1436MB, UsedThreshold: 1596MB
+[2.189s][debug][gc,director    ] Select GC Workers (Not Warm), GCWorkers: 2.000
+[2.190s][debug][gc,director    ] Rule: Allocation Rate (Dynamic GC Workers), MaxAllocRate: 3611.9MB/s (+/-32.0%), Free: 6510MB, GCCPUTime: 0.039, GCDuration: 0.028s, TimeUntilOOM: 1.366s, TimeUntilGC: 1.238s, GCWorkers: 2 -> 2
+[2.190s][debug][gc,director    ] Rule: High Usage, Free: 6510MB(81.6%)
+[2.290s][debug][gc,alloc       ] Allocation Rate: 1688.0MB/s, Predicted: 2062.4MB/s, Avg: 1501.2(+/-382.2)MB/s
+[2.290s][debug][gc,director    ] Rule: Warmup 20%, Used: 1516MB, UsedThreshold: 1596MB
+[2.290s][debug][gc,director    ] Select GC Workers (Not Warm), GCWorkers: 2.000
+[2.290s][debug][gc,director    ] Rule: Allocation Rate (Dynamic GC Workers), MaxAllocRate: 3320.0MB/s (+/-25.5%), Free: 6430MB, GCCPUTime: 0.039, GCDuration: 0.028s, TimeUntilOOM: 1.544s, TimeUntilGC: 1.415s, GCWorkers: 2 -> 2
+[2.290s][debug][gc,director    ] Rule: High Usage, Free: 6430MB(80.6%)
+[2.390s][debug][gc,alloc       ] Allocation Rate: 1672.0MB/s, Predicted: 1930.4MB/s, Avg: 1593.4(+/-289.9)MB/s
+[2.390s][debug][gc,director    ] Rule: Warmup 20%, Used: 1604MB, UsedThreshold: 1596MB
+[2.390s][debug][gc,heap        ] GC(1) Heap before GC invocations=1 (full 1):
+[2.390s][debug][gc,heap        ] GC(1)  ZHeap           used 1604M, capacity 1604M, max capacity 7982M
+[2.390s][debug][gc,heap        ] GC(1)  Metaspace       used 9619K, committed 9856K, reserved 1114112K
+[2.390s][debug][gc,heap        ] GC(1)   class space    used 1101K, committed 1216K, reserved 1048576K
+[2.390s][info ][gc,start       ] GC(1) Garbage Collection (Warmup)
+[2.390s][info ][gc,task        ] GC(1) Using 2 workers
+[2.390s][debug][gc,phases,start] GC(1) Pause Mark Start
+[2.390s][debug][gc,marking     ] GC(1) Using 2 mark stripes
+[2.390s][debug][gc,marking     ] GC(1) Mark Worker/Stripe Distribution
+[2.390s][debug][gc,marking     ] GC(1)   Worker 0(2) -> Stripe 0(2)
+[2.390s][debug][gc,marking     ] GC(1)   Worker 1(2) -> Stripe 1(2)
+[2.390s][info ][gc,phases      ] GC(1) Pause Mark Start 0.033ms
+[2.390s][debug][gc,phases,start] GC(1) Concurrent Mark
+[2.390s][debug][gc,task        ] GC(1) Executing Task: XMarkRootsTask, Active Workers: 2
+[2.390s][debug][gc,tlab        ] GC(1) TLAB totals: thrds: 4  refills: 6248 max: 6245 slow allocs: 553 max 553 waste:  0.4% gc: 813104B max: 262064B slow: 5894656B max: 5894656B
+[2.390s][debug][gc,task        ] GC(1) Executing Task: XMarkTask, Active Workers: 2
+[2.397s][info ][gc,phases      ] GC(1) Concurrent Mark 6.427ms
+[2.397s][debug][gc,phases,start] GC(1) Pause Mark End
+[2.397s][info ][gc,phases      ] GC(1) Pause Mark End 0.030ms
+[2.397s][debug][gc,phases,start] GC(1) Concurrent Mark Free
+[2.397s][info ][gc,phases      ] GC(1) Concurrent Mark Free 0.015ms
+[2.397s][debug][gc,phases,start] GC(1) Concurrent Process Non-Strong References
+[2.397s][debug][gc,phases,start] GC(1) Concurrent References Process
+[2.397s][debug][gc,task        ] GC(1) Executing Task: XReferenceProcessorTask, Active Workers: 2
+[2.397s][debug][gc,phases      ] GC(1) Concurrent References Process 0.050ms
+[2.397s][debug][gc,task        ] GC(1) Executing Task: XProcessWeakRootsTask, Active Workers: 2
+[2.398s][debug][gc,phases,start] GC(1) Concurrent Classes Unlink
+[2.398s][debug][gc,phases,start] GC(1) ClassLoaderData
+[2.398s][debug][gc,phases      ] GC(1) ClassLoaderData 0.015ms
+[2.398s][debug][gc,phases,start] GC(1) Trigger cleanups
+[2.398s][debug][gc,phases      ] GC(1) Trigger cleanups 0.006ms
+[2.398s][debug][gc,task        ] GC(1) Executing Task: XNMethodUnlinkTask, Active Workers: 2
+[2.399s][debug][gc,phases      ] GC(1) Concurrent Classes Unlink 1.005ms
+[2.399s][debug][gc,phases,start] GC(1) Concurrent Classes Purge
+[2.399s][debug][gc,phases      ] GC(1) Concurrent Classes Purge 0.017ms
+[2.399s][debug][gc,phases,start] GC(1) Concurrent References Enqueue
+[2.399s][debug][gc,phases      ] GC(1) Concurrent References Enqueue 0.008ms
+[2.399s][info ][gc,phases      ] GC(1) Concurrent Process Non-Strong References 1.487ms
+[2.399s][debug][gc,phases,start] GC(1) Concurrent Reset Relocation Set
+[2.399s][info ][gc,phases      ] GC(1) Concurrent Reset Relocation Set 0.008ms
+[2.399s][debug][gc,phases,start] GC(1) Concurrent Select Relocation Set
+[2.402s][debug][gc,task        ] GC(1) Executing Task: XRelocationSetInstallTask, Active Workers: 2
+[2.402s][info ][gc,phases      ] GC(1) Concurrent Select Relocation Set 2.948ms
+[2.402s][debug][gc,phases,start] GC(1) Pause Relocate Start
+[2.402s][info ][gc,phases      ] GC(1) Pause Relocate Start 0.018ms
+[2.402s][debug][gc,phases,start] GC(1) Concurrent Relocate
+[2.402s][debug][gc,task        ] GC(1) Executing Task: XRelocateTask, Active Workers: 2
+[2.402s][info ][gc,phases      ] GC(1) Concurrent Relocate 0.605ms
+[2.402s][debug][gc,heap        ] GC(1) Heap after GC invocations=2 (full 2):
+[2.402s][debug][gc,heap        ] GC(1)  ZHeap           used 54M, capacity 1612M, max capacity 7982M
+[2.403s][debug][gc,heap        ] GC(1)  Metaspace       used 9619K, committed 9856K, reserved 1114112K
+[2.403s][debug][gc,heap        ] GC(1)   class space    used 1101K, committed 1216K, reserved 1048576K
+[2.403s][info ][gc,load        ] GC(1) Load: 1.28/1.03/1.01
+[2.403s][info ][gc,mmu         ] GC(1) MMU: 2ms/97.2%, 5ms/98.9%, 10ms/99.3%, 20ms/99.6%, 50ms/99.8%, 100ms/99.9%
+[2.403s][info ][gc,marking     ] GC(1) Mark: 2 stripe(s), 2 proactive flush(es), 1 terminate flush(es), 0 completion(s), 0 continuation(s) 
+[2.403s][info ][gc,marking     ] GC(1) Mark Stack Usage: 32M
+[2.403s][info ][gc,nmethod     ] GC(1) NMethods: 1185 registered, 173 unregistered
+[2.403s][info ][gc,metaspace   ] GC(1) Metaspace: 9M used, 9M committed, 1088M reserved
+[2.403s][info ][gc,ref         ] GC(1) Soft: 207 encountered, 0 discovered, 0 enqueued
+[2.403s][info ][gc,ref         ] GC(1) Weak: 800 encountered, 182 discovered, 0 enqueued
+[2.403s][info ][gc,ref         ] GC(1) Final: 0 encountered, 0 discovered, 0 enqueued
+[2.403s][info ][gc,ref         ] GC(1) Phantom: 3 encountered, 1 discovered, 0 enqueued
+[2.403s][info ][gc,reloc       ] GC(1) Small Pages: 786 / 1572M, Empty: 1556M, Relocated: 0M, In-Place: 0
+[2.403s][info ][gc,reloc       ] GC(1) Medium Pages: 1 / 32M, Empty: 0M, Relocated: 0M, In-Place: 0
+[2.403s][info ][gc,reloc       ] GC(1) Large Pages: 0 / 0M, Empty: 0M, Relocated: 0M, In-Place: 0
+[2.403s][info ][gc,reloc       ] GC(1) Forwarding Usage: 0M
+[2.403s][info ][gc,heap        ] GC(1) Min Capacity: 8M(0%)
+[2.403s][info ][gc,heap        ] GC(1) Max Capacity: 7982M(100%)
+[2.403s][info ][gc,heap        ] GC(1) Soft Max Capacity: 7982M(100%)
+[2.403s][info ][gc,heap        ] GC(1)                Mark Start          Mark End        Relocate Start      Relocate End           High               Low         
+[2.403s][info ][gc,heap        ] GC(1)  Capacity:     1604M (20%)        1612M (20%)        1612M (20%)        1612M (20%)        1612M (20%)        1604M (20%)    
+[2.403s][info ][gc,heap        ] GC(1)      Free:     6378M (80%)        6370M (80%)        7922M (99%)        7928M (99%)        7928M (99%)        6370M (80%)    
+[2.403s][info ][gc,heap        ] GC(1)      Used:     1604M (20%)        1612M (20%)          60M (1%)           54M (1%)         1612M (20%)          54M (1%)     
+[2.403s][info ][gc,heap        ] GC(1)      Live:         -                 3M (0%)            3M (0%)            3M (0%)             -                  -          
+[2.403s][info ][gc,heap        ] GC(1) Allocated:         -                 8M (0%)           12M (0%)           13M (0%)             -                  -          
+[2.403s][info ][gc,heap        ] GC(1)   Garbage:         -              1600M (20%)          44M (1%)           36M (0%)             -                  -          
+[2.403s][info ][gc,heap        ] GC(1) Reclaimed:         -                  -              1556M (19%)        1563M (20%)            -                  -          
+[2.403s][info ][gc             ] GC(1) Garbage Collection (Warmup) 1604M(20%)->54M(1%)
+[2.490s][debug][gc,alloc       ] Allocation Rate: 1980.0MB/s, Predicted: 1887.9MB/s, Avg: 1706.0(+/-177.9)MB/s
+[2.490s][debug][gc,director    ] Rule: Warmup 30%, Used: 454MB, UsedThreshold: 2394MB
+[2.490s][debug][gc,director    ] Select GC Workers (Not Warm), GCWorkers: 2.000
+[2.490s][debug][gc,director    ] Rule: Allocation Rate (Dynamic GC Workers), MaxAllocRate: 2473.2MB/s (+/-10.4%), Free: 7492MB, GCCPUTime: 0.054, GCDuration: 0.041s, TimeUntilOOM: 2.743s, TimeUntilGC: 2.602s, GCWorkers: 2 -> 2
+[2.490s][debug][gc,director    ] Rule: High Usage, Free: 7492MB(93.9%)
+[2.589s][debug][gc,alloc       ] Allocation Rate: 2062.0MB/s, Predicted: 1904.9MB/s, Avg: 1788.6(+/-124.1)MB/s
+[2.589s][debug][gc,director    ] Rule: Warmup 30%, Used: 922MB, UsedThreshold: 2394MB
+[2.589s][debug][gc,director    ] Select GC Workers (Not Warm), GCWorkers: 2.000
+[2.589s][debug][gc,director    ] Rule: Allocation Rate (Dynamic GC Workers), MaxAllocRate: 2313.3MB/s (+/-6.9%), Free: 7024MB, GCCPUTime: 0.054, GCDuration: 0.041s, TimeUntilOOM: 2.839s, TimeUntilGC: 2.698s, GCWorkers: 2 -> 2
+[2.589s][debug][gc,director    ] Rule: High Usage, Free: 7024MB(88.0%)
+[2.689s][debug][gc,alloc       ] Allocation Rate: 2070.0MB/s, Predicted: 2000.3MB/s, Avg: 1823.2(+/-147.3)MB/s
+[2.689s][debug][gc,director    ] Rule: Warmup 30%, Used: 1424MB, UsedThreshold: 2394MB
+[2.689s][debug][gc,director    ] Select GC Workers (Not Warm), GCWorkers: 2.000
+[2.689s][debug][gc,director    ] Rule: Allocation Rate (Dynamic GC Workers), MaxAllocRate: 2485.1MB/s (+/-8.1%), Free: 6522MB, GCCPUTime: 0.054, GCDuration: 0.041s, TimeUntilOOM: 2.428s, TimeUntilGC: 2.287s, GCWorkers: 2 -> 2
+[2.689s][debug][gc,director    ] Rule: High Usage, Free: 6522MB(81.7%)
+[2.790s][debug][gc,alloc       ] Allocation Rate: 2204.0MB/s, Predicted: 2149.6MB/s, Avg: 1862.4(+/-186.2)MB/s
+[2.790s][debug][gc,director    ] Rule: Warmup 30%, Used: 1666MB, UsedThreshold: 2394MB
+[2.790s][debug][gc,director    ] Select GC Workers (Not Warm), GCWorkers: 2.000
+[2.790s][debug][gc,director    ] Rule: Allocation Rate (Dynamic GC Workers), MaxAllocRate: 2762.2MB/s (+/-10.0%), Free: 6280MB, GCCPUTime: 0.054, GCDuration: 0.041s, TimeUntilOOM: 2.067s, TimeUntilGC: 1.926s, GCWorkers: 2 -> 2
+[2.790s][debug][gc,director    ] Rule: High Usage, Free: 6280MB(78.7%)
+[2.890s][debug][gc,alloc       ] Allocation Rate: 2196.0MB/s, Predicted: 2261.6MB/s, Avg: 1903.8(+/-208.4)MB/s
+[2.890s][debug][gc,director    ] Rule: Warmup 30%, Used: 1760MB, UsedThreshold: 2394MB
+[2.890s][debug][gc,director    ] Select GC Workers (Not Warm), GCWorkers: 2.000
+[2.890s][debug][gc,director    ] Rule: Allocation Rate (Dynamic GC Workers), MaxAllocRate: 2947.3MB/s (+/-10.9%), Free: 6186MB, GCCPUTime: 0.054, GCDuration: 0.041s, TimeUntilOOM: 1.892s, TimeUntilGC: 1.751s, GCWorkers: 2 -> 2
+[2.890s][debug][gc,director    ] Rule: High Usage, Free: 6186MB(77.5%)
+[2.990s][debug][gc,alloc       ] Allocation Rate: 2198.0MB/s, Predicted: 2337.2MB/s, Avg: 1949.0(+/-218.1)MB/s
+[2.990s][debug][gc,director    ] Rule: Warmup 30%, Used: 1864MB, UsedThreshold: 2394MB
+[2.990s][debug][gc,director    ] Select GC Workers (Not Warm), GCWorkers: 2.000
+[2.990s][debug][gc,director    ] Rule: Allocation Rate (Dynamic GC Workers), MaxAllocRate: 3054.7MB/s (+/-11.2%), Free: 6082MB, GCCPUTime: 0.054, GCDuration: 0.041s, TimeUntilOOM: 1.791s, TimeUntilGC: 1.650s, GCWorkers: 2 -> 2
+[2.990s][debug][gc,director    ] Rule: High Usage, Free: 6082MB(76.2%)
+[3.090s][debug][gc,alloc       ] Allocation Rate: 2198.0MB/s, Predicted: 2373.6MB/s, Avg: 1997.6(+/-213.9)MB/s
+[3.090s][debug][gc,director    ] Rule: Warmup 30%, Used: 1968MB, UsedThreshold: 2394MB
+[3.090s][debug][gc,director    ] Select GC Workers (Not Warm), GCWorkers: 2.000
+[3.090s][debug][gc,director    ] Rule: Allocation Rate (Dynamic GC Workers), MaxAllocRate: 3077.6MB/s (+/-10.7%), Free: 5978MB, GCCPUTime: 0.054, GCDuration: 0.041s, TimeUntilOOM: 1.755s, TimeUntilGC: 1.614s, GCWorkers: 2 -> 2
+[3.090s][debug][gc,director    ] Rule: High Usage, Free: 5978MB(74.9%)
+[3.189s][debug][gc,alloc       ] Allocation Rate: 2182.0MB/s, Predicted: 2370.1MB/s, Avg: 2045.0(+/-196.3)MB/s
+[3.189s][debug][gc,director    ] Rule: Warmup 30%, Used: 2054MB, UsedThreshold: 2394MB
+[3.189s][debug][gc,director    ] Select GC Workers (Not Warm), GCWorkers: 2.000
+[3.189s][debug][gc,director    ] Rule: Allocation Rate (Dynamic GC Workers), MaxAllocRate: 3016.1MB/s (+/-9.6%), Free: 5892MB, GCCPUTime: 0.054, GCDuration: 0.041s, TimeUntilOOM: 1.782s, TimeUntilGC: 1.641s, GCWorkers: 2 -> 2
+[3.189s][debug][gc,director    ] Rule: High Usage, Free: 5892MB(73.8%)
+[3.289s][debug][gc,alloc       ] Allocation Rate: 2196.0MB/s, Predicted: 2335.3MB/s, Avg: 2095.8(+/-159.7)MB/s
+[3.289s][debug][gc,director    ] Rule: Warmup 30%, Used: 2148MB, UsedThreshold: 2394MB
+[3.290s][debug][gc,director    ] Select GC Workers (Not Warm), GCWorkers: 2.000
+[3.290s][debug][gc,director    ] Rule: Allocation Rate (Dynamic GC Workers), MaxAllocRate: 2860.7MB/s (+/-7.6%), Free: 5798MB, GCCPUTime: 0.054, GCDuration: 0.041s, TimeUntilOOM: 1.883s, TimeUntilGC: 1.742s, GCWorkers: 2 -> 2
+[3.290s][debug][gc,director    ] Rule: High Usage, Free: 5798MB(72.6%)
+[3.390s][debug][gc,alloc       ] Allocation Rate: 2194.0MB/s, Predicted: 2261.6MB/s, Avg: 2148.0(+/-76.0)MB/s
+[3.390s][debug][gc,director    ] Rule: Warmup 30%, Used: 2234MB, UsedThreshold: 2394MB
+[3.390s][debug][gc,director    ] Select GC Workers (Not Warm), GCWorkers: 2.000
+[3.390s][debug][gc,director    ] Rule: Allocation Rate (Dynamic GC Workers), MaxAllocRate: 2511.6MB/s (+/-3.5%), Free: 5712MB, GCCPUTime: 0.054, GCDuration: 0.041s, TimeUntilOOM: 2.197s, TimeUntilGC: 2.056s, GCWorkers: 2 -> 2
+[3.390s][debug][gc,director    ] Rule: High Usage, Free: 5712MB(71.6%)
+[3.490s][debug][gc,alloc       ] Allocation Rate: 1886.0MB/s, Predicted: 2112.0MB/s, Avg: 2138.6(+/-98.6)MB/s
+[3.490s][debug][gc,director    ] Rule: Warmup 30%, Used: 2340MB, UsedThreshold: 2394MB
+[3.490s][debug][gc,director    ] Select GC Workers (Not Warm), GCWorkers: 2.000
+[3.490s][debug][gc,director    ] Rule: Allocation Rate (Dynamic GC Workers), MaxAllocRate: 2463.1MB/s (+/-4.6%), Free: 5606MB, GCCPUTime: 0.054, GCDuration: 0.041s, TimeUntilOOM: 2.176s, TimeUntilGC: 2.035s, GCWorkers: 2 -> 2
+[3.490s][debug][gc,director    ] Rule: High Usage, Free: 5606MB(70.2%)
+[3.590s][debug][gc,alloc       ] Allocation Rate: 1522.0MB/s, Predicted: 1844.9MB/s, Avg: 2084.6(+/-210.3)MB/s
+[3.590s][debug][gc,director    ] Rule: Warmup 30%, Used: 2444MB, UsedThreshold: 2394MB
+[3.590s][debug][gc,heap        ] GC(2) Heap before GC invocations=2 (full 2):
+[3.590s][debug][gc,heap        ] GC(2)  ZHeap           used 2444M, capacity 2444M, max capacity 7982M
+[3.590s][debug][gc,heap        ] GC(2)  Metaspace       used 9619K, committed 9856K, reserved 1114112K
+[3.590s][debug][gc,heap        ] GC(2)   class space    used 1101K, committed 1216K, reserved 1048576K
+[3.590s][info ][gc,start       ] GC(2) Garbage Collection (Warmup)
+[3.590s][info ][gc,task        ] GC(2) Using 2 workers
+[3.590s][debug][gc,phases,start] GC(2) Pause Mark Start
+[3.590s][debug][gc,marking     ] GC(2) Using 2 mark stripes
+[3.590s][debug][gc,marking     ] GC(2) Mark Worker/Stripe Distribution
+[3.590s][debug][gc,marking     ] GC(2)   Worker 0(2) -> Stripe 0(2)
+[3.590s][debug][gc,marking     ] GC(2)   Worker 1(2) -> Stripe 1(2)
+[3.590s][info ][gc,phases      ] GC(2) Pause Mark Start 0.089ms
+[3.590s][debug][gc,phases,start] GC(2) Concurrent Mark
+[3.590s][debug][gc,task        ] GC(2) Executing Task: XMarkRootsTask, Active Workers: 2
+[3.591s][debug][gc,tlab        ] GC(2) TLAB totals: thrds: 1  refills: 9609 max: 9609 slow allocs: 849 max 849 waste:  0.4% gc: 94144B max: 94144B slow: 9124304B max: 9124304B
+[3.591s][debug][gc,task        ] GC(2) Executing Task: XMarkTask, Active Workers: 2
+[3.597s][info ][gc,phases      ] GC(2) Concurrent Mark 6.626ms
+[3.598s][debug][gc,phases,start] GC(2) Pause Mark End
+[3.598s][info ][gc,phases      ] GC(2) Pause Mark End 0.025ms
+[3.598s][debug][gc,phases,start] GC(2) Concurrent Mark Free
+[3.598s][info ][gc,phases      ] GC(2) Concurrent Mark Free 0.029ms
+[3.598s][debug][gc,phases,start] GC(2) Concurrent Process Non-Strong References
+[3.598s][debug][gc,phases,start] GC(2) Concurrent References Process
+[3.598s][debug][gc,task        ] GC(2) Executing Task: XReferenceProcessorTask, Active Workers: 2
+[3.598s][debug][gc,phases      ] GC(2) Concurrent References Process 0.130ms
+[3.598s][debug][gc,task        ] GC(2) Executing Task: XProcessWeakRootsTask, Active Workers: 2
+[3.598s][debug][gc,phases,start] GC(2) Concurrent Classes Unlink
+[3.598s][debug][gc,phases,start] GC(2) ClassLoaderData
+[3.598s][debug][gc,phases      ] GC(2) ClassLoaderData 0.011ms
+[3.598s][debug][gc,phases,start] GC(2) Trigger cleanups
+[3.598s][debug][gc,phases      ] GC(2) Trigger cleanups 0.003ms
+[3.598s][debug][gc,task        ] GC(2) Executing Task: XNMethodUnlinkTask, Active Workers: 2
+[3.599s][debug][gc,phases      ] GC(2) Concurrent Classes Unlink 1.091ms
+[3.599s][debug][gc,phases,start] GC(2) Concurrent Classes Purge
+[3.599s][debug][gc,phases      ] GC(2) Concurrent Classes Purge 0.011ms
+[3.599s][debug][gc,phases,start] GC(2) Concurrent References Enqueue
+[3.599s][debug][gc,phases      ] GC(2) Concurrent References Enqueue 0.013ms
+[3.599s][info ][gc,phases      ] GC(2) Concurrent Process Non-Strong References 1.651ms
+[3.599s][debug][gc,phases,start] GC(2) Concurrent Reset Relocation Set
+[3.599s][info ][gc,phases      ] GC(2) Concurrent Reset Relocation Set 0.018ms
+[3.599s][debug][gc,phases,start] GC(2) Concurrent Select Relocation Set
+[3.601s][debug][gc,task        ] GC(2) Executing Task: XRelocationSetInstallTask, Active Workers: 2
+[3.601s][info ][gc,phases      ] GC(2) Concurrent Select Relocation Set 1.814ms
+[3.601s][debug][gc,phases,start] GC(2) Pause Relocate Start
+[3.601s][info ][gc,phases      ] GC(2) Pause Relocate Start 0.044ms
+[3.601s][debug][gc,phases,start] GC(2) Concurrent Relocate
+[3.601s][debug][gc,task        ] GC(2) Executing Task: XRelocateTask, Active Workers: 2
+[3.602s][info ][gc,phases      ] GC(2) Concurrent Relocate 0.790ms
+[3.602s][debug][gc,heap        ] GC(2) Heap after GC invocations=3 (full 3):
+[3.602s][debug][gc,heap        ] GC(2)  ZHeap           used 54M, capacity 2452M, max capacity 7982M
+[3.602s][debug][gc,heap        ] GC(2)  Metaspace       used 9619K, committed 9856K, reserved 1114112K
+[3.602s][debug][gc,heap        ] GC(2)   class space    used 1101K, committed 1216K, reserved 1048576K
+[3.602s][info ][gc,load        ] GC(2) Load: 1.25/1.03/1.01
+[3.602s][info ][gc,mmu         ] GC(2) MMU: 2ms/95.6%, 5ms/98.2%, 10ms/98.9%, 20ms/99.2%, 50ms/99.7%, 100ms/99.8%
+[3.602s][info ][gc,marking     ] GC(2) Mark: 2 stripe(s), 2 proactive flush(es), 1 terminate flush(es), 0 completion(s), 0 continuation(s) 
+[3.602s][info ][gc,marking     ] GC(2) Mark Stack Usage: 32M
+[3.602s][info ][gc,nmethod     ] GC(2) NMethods: 1185 registered, 173 unregistered
+[3.602s][info ][gc,metaspace   ] GC(2) Metaspace: 9M used, 9M committed, 1088M reserved
+[3.602s][info ][gc,ref         ] GC(2) Soft: 207 encountered, 0 discovered, 0 enqueued
+[3.602s][info ][gc,ref         ] GC(2) Weak: 800 encountered, 0 discovered, 0 enqueued
+[3.602s][info ][gc,ref         ] GC(2) Final: 0 encountered, 0 discovered, 0 enqueued
+[3.602s][info ][gc,ref         ] GC(2) Phantom: 3 encountered, 1 discovered, 0 enqueued
+[3.602s][info ][gc,reloc       ] GC(2) Small Pages: 1206 / 2412M, Empty: 2398M, Relocated: 0M, In-Place: 0
+[3.602s][info ][gc,reloc       ] GC(2) Medium Pages: 1 / 32M, Empty: 0M, Relocated: 0M, In-Place: 0
+[3.602s][info ][gc,reloc       ] GC(2) Large Pages: 0 / 0M, Empty: 0M, Relocated: 0M, In-Place: 0
+[3.602s][info ][gc,reloc       ] GC(2) Forwarding Usage: 0M
+[3.602s][info ][gc,heap        ] GC(2) Min Capacity: 8M(0%)
+[3.602s][info ][gc,heap        ] GC(2) Max Capacity: 7982M(100%)
+[3.602s][info ][gc,heap        ] GC(2) Soft Max Capacity: 7982M(100%)
+[3.602s][info ][gc,heap        ] GC(2)                Mark Start          Mark End        Relocate Start      Relocate End           High               Low         
+[3.602s][info ][gc,heap        ] GC(2)  Capacity:     2444M (31%)        2452M (31%)        2452M (31%)        2452M (31%)        2452M (31%)        2444M (31%)    
+[3.602s][info ][gc,heap        ] GC(2)      Free:     5538M (69%)        5530M (69%)        7924M (99%)        7928M (99%)        7928M (99%)        5530M (69%)    
+[3.602s][info ][gc,heap        ] GC(2)      Used:     2444M (31%)        2452M (31%)          58M (1%)           54M (1%)         2452M (31%)          54M (1%)     
+[3.602s][info ][gc,heap        ] GC(2)      Live:         -                 3M (0%)            3M (0%)            3M (0%)             -                  -          
+[3.602s][info ][gc,heap        ] GC(2) Allocated:         -                 8M (0%)           12M (0%)           13M (0%)             -                  -          
+[3.602s][info ][gc,heap        ] GC(2)   Garbage:         -              2440M (31%)          42M (1%)           36M (0%)             -                  -          
+[3.602s][info ][gc,heap        ] GC(2) Reclaimed:         -                  -              2398M (30%)        2403M (30%)            -                  -          
+[3.602s][info ][gc             ] GC(2) Garbage Collection (Warmup) 2444M(31%)->54M(1%)
+[3.689s][debug][gc,alloc       ] Allocation Rate: 1462.0MB/s, Predicted: 1592.0MB/s, Avg: 2023.8(+/-281.6)MB/s
+[3.689s][debug][gc,director    ] Select GC Workers (Try Lowering), AvoidLongGCWorkers: 0.002, AvoidOOMGCWorkers: 0.010, NextAvoidOOMGCWorkers: 0.010, LastGCWorkers: 2.000, GCWorkers: 1.000
+[3.689s][debug][gc,director    ] Rule: Allocation Rate (Dynamic GC Workers), MaxAllocRate: 2950.3MB/s (+/-13.9%), Free: 7462MB, GCCPUTime: 0.040, GCDuration: 0.040s, TimeUntilOOM: 2.220s, TimeUntilGC: 2.080s, GCWorkers: 2 -> 1
+[3.689s][debug][gc,director    ] Rule: High Usage, Free: 7462MB(93.5%)
+[3.689s][debug][gc,director    ] Rule: Proactive, UsedUntilEnabled: 368MB, TimeUntilEnabled: 299.913s
+[3.789s][debug][gc,alloc       ] Allocation Rate: 1702.0MB/s, Predicted: 1511.3MB/s, Avg: 1973.6(+/-289.6)MB/s
+[3.789s][debug][gc,director    ] Select GC Workers (Try Lowering), AvoidLongGCWorkers: 0.002, AvoidOOMGCWorkers: 0.011, NextAvoidOOMGCWorkers: 0.010, LastGCWorkers: 2.000, GCWorkers: 1.000
+[3.789s][debug][gc,director    ] Rule: Allocation Rate (Dynamic GC Workers), MaxAllocRate: 2926.6MB/s (+/-14.7%), Free: 6984MB, GCCPUTime: 0.040, GCDuration: 0.040s, TimeUntilOOM: 2.081s, TimeUntilGC: 1.941s, GCWorkers: 2 -> 1
+[3.790s][debug][gc,director    ] Rule: High Usage, Free: 6984MB(87.5%)
+[3.790s][debug][gc,director    ] Rule: Proactive, AcceptableGCInterval: 1.424s, TimeSinceLastGC: 0.187s, TimeUntilGC: 1.237s
+[3.890s][debug][gc,alloc       ] Allocation Rate: 2104.0MB/s, Predicted: 1622.8MB/s, Avg: 1964.4(+/-283.8)MB/s
+[3.890s][debug][gc,director    ] Select GC Workers (Try Lowering), AvoidLongGCWorkers: 0.002, AvoidOOMGCWorkers: 0.011, NextAvoidOOMGCWorkers: 0.010, LastGCWorkers: 2.000, GCWorkers: 1.000
+[3.890s][debug][gc,director    ] Rule: Allocation Rate (Dynamic GC Workers), MaxAllocRate: 2898.3MB/s (+/-14.4%), Free: 6486MB, GCCPUTime: 0.040, GCDuration: 0.040s, TimeUntilOOM: 1.955s, TimeUntilGC: 1.815s, GCWorkers: 2 -> 1
+[3.890s][debug][gc,director    ] Rule: High Usage, Free: 6486MB(81.3%)
+[3.890s][debug][gc,director    ] Rule: Proactive, AcceptableGCInterval: 1.424s, TimeSinceLastGC: 0.287s, TimeUntilGC: 1.137s
+[3.990s][debug][gc,alloc       ] Allocation Rate: 2518.0MB/s, Predicted: 1906.5MB/s, Avg: 1996.4(+/-323.6)MB/s
+[3.990s][debug][gc,director    ] Select GC Workers (Unsteady), AvoidLongGCWorkers: 0.002, AvoidOOMGCWorkers: 0.013, LastGCWorkers: 2.000, HalfGCWorkers: 1.000, GCWorkers: 2.000
+[3.990s][debug][gc,director    ] Rule: Allocation Rate (Dynamic GC Workers), MaxAllocRate: 3061.2MB/s (+/-16.2%), Free: 5968MB, GCCPUTime: 0.040, GCDuration: 0.029s, TimeUntilOOM: 1.678s, TimeUntilGC: 1.549s, GCWorkers: 2 -> 2
+[3.990s][debug][gc,director    ] Rule: High Usage, Free: 5968MB(74.8%)
+[3.990s][debug][gc,director    ] Rule: Proactive, AcceptableGCInterval: 1.424s, TimeSinceLastGC: 0.388s, TimeUntilGC: 1.037s
+[4.022s][info ][gc,heap,exit   ] Heap
+[4.022s][info ][gc,heap,exit   ]  ZHeap           used 2136M, capacity 2452M, max capacity 7982M
+[4.022s][info ][gc,heap,exit   ]  Metaspace       used 9622K, committed 9856K, reserved 1114112K
+[4.022s][info ][gc,heap,exit   ]   class space    used 1102K, committed 1216K, reserved 1048576K
